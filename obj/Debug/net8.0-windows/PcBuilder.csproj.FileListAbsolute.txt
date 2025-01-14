@@ -1,0 +1,5 @@
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\PcBuilder.csproj.AssemblyReference.cache
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\Pages\MainWindow.g.cs
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\App.g.cs
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\PcBuilder_MarkupCompile.cache
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\PcBuilder_MarkupCompile.lref
