@@ -1,0 +1,120 @@
+name,price,core_count,core_clock,boost_clock,tdp,graphics,smt,socket
+AMD Ryzen 7 7800X3D,339.0,8,4.2,5.0,120,Radeon,True,AM5
+Intel Core i9-13900K,589.0,24,3.0,5.8,125,Intel UHD,True,LGA1700
+AMD Ryzen 5 7600,229.0,6,3.8,5.1,65,Radeon,True,AM5
+Intel Core i7-12700K,384.0,12,3.6,5.0,125,Intel UHD,True,LGA1700
+AMD Ryzen 5 5600,199.0,6,3.5,4.4,65,None,True,AM4
+Intel Core i5-12400,199.0,6,2.5,4.4,65,Intel UHD,True,LGA1700
+AMD Ryzen 9 5900X,399.0,12,3.7,4.8,105,None,True,AM4
+Intel Core i7-13700K,419.0,16,3.4,5.4,125,Intel UHD,True,LGA1700
+AMD Ryzen 7 5800X3D,449.0,8,3.4,4.5,105,None,True,AM4
+AMD Ryzen 3 5300G,129.0,4,3.8,4.2,65,Radeon,True,AM4
+Intel Core i3-12100,129.0,4,3.3,4.3,60,Intel UHD,True,LGA1700
+AMD Ryzen 9 5950X,549.0,16,3.4,4.9,105,None,True,AM4
+Intel Core i9-12900K,589.0,16,3.2,5.2,125,Intel UHD,True,LGA1700
+AMD Ryzen 5 7600X,299.0,6,4.7,5.3,105,None,True,AM5
+Intel Core i5-12600K,289.0,10,3.7,4.9,125,Intel UHD,True,LGA1700
+AMD Ryzen 7 5700X,299.0,8,3.4,4.6,65,None,True,AM4
+Intel Core i7-11700K,349.0,8,3.6,4.9,125,Intel UHD,True,LGA1200
+AMD Ryzen 3 4100,99.0,4,3.8,4.0,65,None,True,AM4
+Intel Pentium Gold G7400,64.0,2,3.7,,46,Intel UHD,False,LGA1700
+AMD Ryzen 5 5500,159.0,6,3.6,4.2,65,None,True,AM4
+Intel Core i3-10100,99.0,4,3.6,4.3,65,Intel UHD,True,LGA1200
+AMD Ryzen Threadripper PRO 3995WX,5489.0,64,2.7,4.2,280,None,True,sTRX4
+Intel Core i9-10900K,488.0,10,3.7,5.3,125,Intel UHD,True,LGA1200
+AMD Athlon 3000G,49.0,2,3.5,,35,Radeon,False,AM4
+Intel Xeon E-2236,284.0,6,3.4,4.8,80,Intel UHD,True,LGA1151
+AMD Ryzen 7 2700X,179.0,8,3.7,4.3,105,None,True,AM4
+Intel Core i5-10600K,262.0,6,4.1,4.8,125,Intel UHD,True,LGA1200
+AMD Ryzen 5 3400G,149.0,4,3.7,4.2,65,Radeon,True,AM4
+Intel Core i3-10320,154.0,4,3.8,4.6,65,Intel UHD,True,LGA1200
+AMD Ryzen 9 3950X,749.0,16,3.5,4.7,105,None,True,AM4
+Intel Core i7-10700K,374.0,8,3.8,5.1,125,Intel UHD,True,LGA1200
+AMD Ryzen 5 1600 AF,85.0,6,3.2,3.6,65,None,True,AM4
+Intel Celeron G5905,42.0,2,3.5,,58,None,False,LGA1200
+AMD FX-8350,59.0,8,4.0,4.2,125,None,False,AM3+
+Intel Core i5-9400F,157.0,6,2.9,4.1,65,None,True,LGA1151
+AMD A10-9700,59.0,4,3.5,3.8,65,Radeon,False,AM4
+Intel Xeon Gold 6148,3449.0,20,2.4,3.7,150,None,True,LGA3647
+AMD Epyc 7702,6450.0,64,2.0,3.35,200,None,True,SP3
+Intel Core i9-9900K,499.0,8,3.6,5.0,95,Intel UHD,True,LGA1151
+AMD Ryzen 3 2200G,99.0,4,3.5,3.7,65,Radeon,False,AM4
+Intel Core i7-9700K,374.0,8,3.6,4.9,95,None,True,LGA1151
+AMD Ryzen 5 2600,120.0,6,3.4,3.9,65,None,True,AM4
+Intel Core i5-9600K,262.0,6,3.7,4.6,95,None,True,LGA1151
+AMD Ryzen 3 1200,59.0,4,3.1,3.4,65,None,False,AM4
+Intel Pentium G4560,64.0,2,3.5,,54,None,True,LGA1151
+AMD FX-6300,45.0,6,3.5,4.1,95,None,False,AM3+
+Intel Core i3-8100,119.0,4,3.6,,65,Intel UHD,True,LGA1151
+AMD A6-9500,49.0,2,3.5,3.8,65,Radeon,False,AM4
+Intel Core i7-8700K,359.0,6,3.7,4.7,95,Intel UHD,True,LGA1151
+AMD Athlon 300GE,49.0,2,3.4,,35,Radeon,False,AM4
+Intel Core i9-7940X,1399.0,14,3.1,4.3,165,None,True,LGA2066
+AMD Ryzen Threadripper 1950X,899.0,16,3.4,4.0,180,None,True,sTR4
+Intel Core i7-7820X,599.0,8,3.6,4.3,140,None,True,LGA2066
+AMD Ryzen 7 1700,179.0,8,3.0,3.7,65,None,True,AM4
+Intel Xeon E5-2680 v4,1749.0,14,2.4,3.3,120,None,True,LGA2011-3
+AMD Ryzen 5 1400,119.0,4,3.2,3.4,65,None,True,AM4
+Intel Core i7-7700K,349.0,4,4.2,4.5,91,Intel HD,True,LGA1151
+AMD FX-9590,199.0,8,4.7,5.0,220,None,False,AM3+
+Intel Core i5-7400,189.0,4,3.0,3.5,65,Intel HD,True,LGA1151
+AMD Ryzen 3 1300X,129.0,4,3.5,3.7,65,None,True,AM4
+Intel Core i3-7100,117.0,2,3.9,,51,Intel HD,True,LGA1151
+AMD Ryzen Threadripper 1920X,649.0,12,3.5,4.0,180,None,True,sTR4
+Intel Xeon Platinum 8176,8719.0,28,2.1,3.8,165,None,True,LGA3647
+AMD A8-9600,59.0,4,3.1,3.4,65,Radeon,False,AM4
+Intel Core i5-2500K,149.0,4,3.3,3.7,95,Intel HD,False,LGA1155
+AMD Ryzen 5 2400G,169.0,4,3.6,3.9,65,Radeon,True,AM4
+Intel Core i7-4790K,339.0,4,4.0,4.4,88,Intel HD,True,LGA1150
+AMD FX-6100,45.0,6,3.3,3.9,95,None,False,AM3+
+Intel Core i5-3570K,219.0,4,3.4,3.8,77,Intel HD,False,LGA1155
+AMD Ryzen Threadripper 2990WX,1799.0,32,3.0,4.2,250,None,True,sTR4
+Intel Core i9-7900X,999.0,10,3.3,4.3,140,None,True,LGA2066
+AMD Ryzen 7 1800X,359.0,8,3.6,4.0,95,None,True,AM4
+Intel Core i3-7350K,179.0,2,4.2,,60,Intel HD,True,LGA1151
+AMD Ryzen 3 PRO 4350G,149.0,4,3.8,4.0,65,Radeon,True,AM4
+Intel Core i5-6600K,239.0,4,3.5,3.9,91,Intel HD,True,LGA1151
+AMD FX-8350 Black Edition,99.0,8,4.0,4.2,125,None,False,AM3+
+Intel Core i7-3960X,999.0,6,3.3,3.9,130,None,False,LGA2011
+AMD A10-7890K,149.0,4,4.1,4.3,95,Radeon,False,FM2+
+Intel Xeon E5-2620 v3,419.0,6,2.4,3.2,85,None,False,LGA2011-3
+AMD Opteron 6174,129.0,12,2.2,,80,None,False,Socket G34
+Intel Celeron G3930,39.0,2,2.9,,51,Intel HD,False,LGA1151
+AMD Ryzen 5 PRO 2400GE,149.0,4,3.2,3.8,35,Radeon,True,AM4
+Intel Pentium G4400,59.0,2,3.3,,54,Intel HD,False,LGA1151
+AMD FX-4100,49.0,4,3.6,3.8,95,None,False,AM3+
+Intel Core i7-2600K,319.0,4,3.4,3.8,95,Intel HD,False,LGA1155
+AMD Phenom II X4 965,85.0,4,3.4,3.4,140,None,False,AM3
+Intel Core 2 Quad Q6600,59.0,4,2.4,,105,None,False,LGA775
+AMD Athlon 64 X2 6000+,99.0,2,3.0,,125,None,False,AM2
+Intel Pentium 4 651,49.0,1,3.4,,84,None,False,LGA775
+AMD Sempron 140,29.0,1,2.7,,45,None,False,AM3
+Intel Celeron 420,39.0,1,1.6,,35,None,False,LGA775
+AMD Ryzen 3 3100,99.0,4,3.6,3.9,65,None,True,AM4
+Intel Core i5-10400,182.0,6,2.9,4.3,65,Intel UHD,True,LGA1200
+AMD Ryzen 5 3600,199.0,6,3.6,4.2,65,None,True,AM4
+Intel Core i9-10850K,453.0,10,3.6,5.2,125,Intel UHD,True,LGA1200
+AMD Ryzen 7 3700X,329.0,8,3.6,4.4,65,None,True,AM4
+Intel Core i3-10100F,89.0,4,3.6,4.3,65,None,True,LGA1200
+AMD Ryzen 9 3900X,499.0,12,3.8,4.6,105,None,True,AM4
+Intel Core i5-11400F,157.0,6,2.6,4.4,65,None,True,LGA1200
+AMD Ryzen 5 5600X,299.0,6,3.7,4.6,65,None,True,AM4
+Intel Core i7-11700,323.0,8,2.5,4.9,65,Intel UHD,True,LGA1200
+AMD Ryzen 7 5800X,449.0,8,3.8,4.7,105,None,True,AM4
+Intel Core i5-10600KF,237.0,6,4.1,4.8,125,None,True,LGA1200
+AMD Ryzen 9 5950X,799.0,16,3.4,4.9,105,None,True,AM4
+Intel Core i7-10700F,298.0,8,2.9,4.8,65,None,True,LGA1200
+AMD Ryzen Threadripper PRO 3975WX,2749.0,32,3.5,4.2,280,None,True,sTRX4
+Intel Core i9-10900F,422.0,10,2.8,5.2,65,None,True,LGA1200
+AMD Ryzen 5 1600X,219.0,6,3.6,4.0,95,None,True,AM4
+Intel Core i5-9600KF,219.0,6,3.7,4.6,95,None,True,LGA1151
+AMD Ryzen 5 2600X,149.0,6,3.6,4.2,95,None,True,AM4
+Intel Core i7-8700,329.0,6,3.2,4.6,65,Intel UHD,True,LGA1151
+AMD Ryzen 3 3200G,99.0,4,3.6,4.0,65,Radeon,True,AM4
+Intel Core i3-9100,122.0,4,3.6,4.2,65,Intel UHD,True,LGA1151
+AMD Ryzen Threadripper 3960X,1399.0,24,3.8,4.5,280,None,True,sTRX4
+Intel Core i9-9900KF,472.0,8,3.6,5.0,95,None,True,LGA1151
+AMD Ryzen 7 1700X,289.0,8,3.4,3.8,95,None,True,AM4
+Intel Core i5-9400,182.0,6,2.9,4.1,65,Intel UHD,True,LGA1151
+AMD Ryzen Threadripper 2920X,649.0,12,3.5,4.3,180,None,True,sTR4
+Intel Core i7-8086K,425.0,6,4.0,5.0,95,Intel UHD,True,LGA1151

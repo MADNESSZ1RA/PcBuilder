@@ -13,7 +13,6 @@ namespace PcBuilder.Database
         {
             _connectionString = connectionString;
         }
-
         public void CreateTables()
         {
             string[] tableCreationScripts =
@@ -83,7 +82,7 @@ namespace PcBuilder.Database
                     }
                 } 
                 catch (Exception ex)
-                { 
+                {
                     MessageBox.Show(ex.Message );
                 }
             }

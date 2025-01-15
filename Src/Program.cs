@@ -13,7 +13,7 @@ namespace PcBuilder.Classes
 
             DatabaseInitializer dbInitializer = new DatabaseInitializer(Config.connectionString);
             //dbInitializer.CreateTables(); // Для создания таблиц
-            //dbInitializer.InsertData(); // Для заполнения таблиц
+            //dbInitializer.InsertData(); // Для заполнения таблиц (не работает)
             //dbInitializer.DropDataTable(); // Для удаления таблиц
 
 

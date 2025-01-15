@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace PcBuilder.Pages
 {
@@ -17,11 +18,55 @@ namespace PcBuilder.Pages
 
         public string current_page = "";
 
+        private string selectedCpu = "";
+        private string selectedMotherboard = "";
+        private string selectedPowerSupply = "";
+        private string selectedCase = "";
+        private string selectedVideoCard = "";
+        private string selectedCpuCooler = "";
+        private string selectedMemory = "";
+        private string selectedInternalHardDrive = "";
+        private string selectedOs = "";
+
+        private static readonly Dictionary<string, string> columnTranslations = new Dictionary<string, string>
+        {
+            { "price", "Цена" },
+            { "chipset", "Чипсет" },
+            { "memory", "Память" },
+            { "core_clock", "Частота ядра" },
+            { "boost_clock", "Частота в турбо-режиме" },
+            { "color", "Цвет" },
+            { "length", "Длина" },
+            { "core_count", "Количество ядер" },
+            { "tdp", "Тепловыделение" },
+            { "graphics", "Встроенная графическое ядро" },
+            { "smt", "Многопоточность" },
+            { "socket", "Сокет" },
+            { "form_factor", "Форм-фактор" },
+            { "max_memory", "Максимальное количество памяти" },
+            { "memory_slots", "Слотов для оперативной памяти" },
+            { "type", "Тип" },
+            { "efficiency", "Сертификат" },
+            { "wattage", "Мощность" },
+            { "modular", "Модульный" },
+            { "rpm", "Число оборотов" },
+            { "noise_level", "Уровень шума" },
+            { "size", "Длина" },
+            { "speed", "Скорость" },
+            { "modules", "Количество в комплекте" },
+            { "price_per_gb", "Цена за 1ГБ" },
+            { "first_word_latency", "Тактовая частота" },
+            { "cas_latency", "Количество тактов" },
+            { "Mode", "Разрядность" },
+            { "side_panel", "Боковая панель"},
+        };
+
         public void cpu_click(object sender, EventArgs e)
         {
             DisplayTableData("cpu");
             current_page = "cpu";
             DescriptionTextBox.Text = "";
+            cpu_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void motherboard_click(object sender, EventArgs e)
@@ -29,6 +74,7 @@ namespace PcBuilder.Pages
             DisplayTableData("motherboard");
             current_page = "motherboard";
             DescriptionTextBox.Text = "";
+            motherboard_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void power_supply_click(object sender, EventArgs e)
@@ -36,6 +82,7 @@ namespace PcBuilder.Pages
             DisplayTableData("power_supply");
             current_page = "power_supply";
             DescriptionTextBox.Text = "";
+            power_supply_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void case_click(object sender, EventArgs e)
@@ -43,6 +90,7 @@ namespace PcBuilder.Pages
             DisplayTableData("case");
             current_page = "case";
             DescriptionTextBox.Text = "";
+            case_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void video_card_click(object sender, EventArgs e)
@@ -50,6 +98,7 @@ namespace PcBuilder.Pages
             DisplayTableData("video_card");
             current_page = "video_card";
             DescriptionTextBox.Text = "";
+            video_card_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void cpu_cooler_click(object sender, EventArgs e)
@@ -57,6 +106,7 @@ namespace PcBuilder.Pages
             DisplayTableData("cpu_cooler");
             current_page = "cpu_cooler";
             DescriptionTextBox.Text = "";
+            cpu_cooler_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void memory_click(object sender, EventArgs e)
@@ -64,6 +114,7 @@ namespace PcBuilder.Pages
             DisplayTableData("memory");
             current_page = "memory";
             DescriptionTextBox.Text = "";
+            memory_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void internal_hard_drive_click(object sender, EventArgs e)
@@ -71,6 +122,7 @@ namespace PcBuilder.Pages
             DisplayTableData("internal_hard_drive");
             current_page = "internal_hard_drive";
             DescriptionTextBox.Text = "";
+            internal_hard_drive_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void os_click(object sender, EventArgs e)
@@ -78,6 +130,7 @@ namespace PcBuilder.Pages
             DisplayTableData("os");
             current_page = "os";
             DescriptionTextBox.Text = "";
+            os_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         private void DisplayTableData(string table)
@@ -115,15 +168,16 @@ namespace PcBuilder.Pages
                                 names.Add(reader["name"].ToString());
                                 StringBuilder description = new StringBuilder();
 
-                                for (int i = 0; i < reader.FieldCount; i++)
+                                for (int i = 1; i < reader.FieldCount; i++)
                                 {
-                                    if (reader.GetName(i) != "name")
+                                    string columnName = reader.GetName(i);
+                                    if (reader[i] != DBNull.Value && columnTranslations.ContainsKey(columnName))
                                     {
-                                        description.Append($"{reader.GetName(i)}: {reader[i]} ");
+                                        description.AppendLine($"{columnTranslations[columnName]}: {reader[i].ToString()}");
                                     }
                                 }
 
-                                descriptions.Add(description.ToString().Trim());
+                                descriptions.Add(description.ToString());
                             }
                         }
                     }
@@ -131,10 +185,7 @@ namespace PcBuilder.Pages
             }
             catch (Exception ex)
             {
-                names.Clear();
-                descriptions.Clear();
-                names.Add($"Ошибка: {ex.Message}");
-                descriptions.Add("");
+                MessageBox.Show("Ошибка: " + ex.Message);
             }
 
             return (names.ToArray(), descriptions.ToArray());
@@ -144,92 +195,63 @@ namespace PcBuilder.Pages
         {
             if (ListTextBox.SelectedItem != null)
             {
-                string selectedName = ListTextBox.SelectedItem.ToString();
-                var description = GetProductDescription(selectedName);
-                DescriptionTextBox.Text = description;
+                int index = ListTextBox.SelectedIndex;
+                DescriptionTextBox.Text = GetTableData(current_page).descriptions[index];
             }
         }
-        private string GetProductDescription(string productName)
+
+        private void add_to_tomplect_click(object sender, RoutedEventArgs e)
         {
-            string description = "";
-
-            var columnTranslations = new Dictionary<string, string>
-    {
-        { "price", "Цена" },
-        { "chipset", "Чипсет" },
-        { "memory", "Память" },
-        { "core_clock", "Частота ядра" },
-        { "boost_clock", "Частота в турбо-режиме" },
-        { "color", "Цвет" },
-        { "length", "Длина" },
-        { "core_count", "Количество ядер" },
-        { "tdp", "Тепловыделение" },
-        { "graphics", "Встроенная графическое ядро" },
-        { "smt", "Многопоточность" },
-        { "socket", "Сокет" },
-        { "form_factor", "Форм-фактор" },
-        { "max_memory", "Максимальное количество памяти" },
-        { "memory_slots", "Слотов для оперативной памяти" },
-        { "type", "Тип" },
-        { "efficiency", "Сертификат" },
-        { "wattage", "Мощность" },
-        { "modular", "Модульный" },
-        { "rpm", "Число оборотов" },
-        { "noise_level", "Уровень шума" },
-        { "size", "Длина" },
-        { "speed", "Скорость" },
-        { "modules", "Количество в комплекте" },
-        { "price_per_gb", "Цена за 1ГБ" },
-        { "first_word_latency", "Тактовая частота" },
-        { "cas_latency", "Количество тактов" },
-        { "Mode", "Разрядность" },
-        { "side_panel", "Боковая панель"},
-    };
-
-            // Фильтры, которые не нужно выводить
-            var excludedColumns = new List<string> { "id", "name", "internal_35_bays", "external_volume", "side_panel", "psu" };
-
-            try
+            string itemName = ListTextBox.SelectedItem.ToString();
+            if (!string.IsNullOrEmpty(itemName))
             {
-                using (var connection = new NpgsqlConnection(Config.connectionString))
+                switch (current_page)
                 {
-                    connection.Open();
-                    string query = $"SELECT * FROM \"{current_page}\" WHERE name = @name";
-
-                    using (var cmd = new NpgsqlCommand(query, connection))
-                    {
-                        cmd.Parameters.AddWithValue("@name", productName);
-
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                StringBuilder descriptionBuilder = new StringBuilder();
-
-                                for (int i = 0; i < reader.FieldCount; i++)
-                                {
-                                    string columnName = reader.GetName(i);
-
-                                    if (!excludedColumns.Contains(columnName))
-                                    {
-                                        string translatedColumnName = columnTranslations.ContainsKey(columnName) ? columnTranslations[columnName] : columnName;
-
-                                        descriptionBuilder.Append($"{translatedColumnName}: {reader[i]} \n");
-                                    }
-                                }
-
-                                description = descriptionBuilder.ToString().Trim();
-                            }
-                        }
-                    }
+                    case "cpu":
+                        selectedCpu = itemName;
+                        break;
+                    case "motherboard":
+                        selectedMotherboard = itemName;
+                        break;
+                    case "power_supply":
+                        selectedPowerSupply = itemName;
+                        break;
+                    case "case":
+                        selectedCase = itemName;
+                        break;
+                    case "video_card":
+                        selectedVideoCard = itemName;
+                        break;
+                    case "cpu_cooler":
+                        selectedCpuCooler = itemName;
+                        break;
+                    case "memory":
+                        selectedMemory = itemName;
+                        break;
+                    case "internal_hard_drive":
+                        selectedInternalHardDrive = itemName;
+                        break;
+                    case "os":
+                        selectedOs = itemName;
+                        break;
                 }
-            }
-            catch (Exception ex)
-            {
-                description = $"Ошибка при получении данных: {ex.Message}";
-            }
 
-            return description;
+                UpdateComplectTextBox();
+            }
+        }
+
+        private void UpdateComplectTextBox()
+        {
+            ComplectTextBox.Clear();
+            if (!string.IsNullOrEmpty(selectedCpu)) ComplectTextBox.AppendText("Процессор: " + selectedCpu + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedMotherboard)) ComplectTextBox.AppendText("Материнская плата: " + selectedMotherboard + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedPowerSupply)) ComplectTextBox.AppendText("Блок питания: " + selectedPowerSupply + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedCase)) ComplectTextBox.AppendText("Корпус: " + selectedCase + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedVideoCard)) ComplectTextBox.AppendText("Видеокарта: " + selectedVideoCard + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedCpuCooler)) ComplectTextBox.AppendText("Охлаждение: " + selectedCpuCooler + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedMemory)) ComplectTextBox.AppendText("Память: " + selectedMemory + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedInternalHardDrive)) ComplectTextBox.AppendText("Накопитель: " + selectedInternalHardDrive + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedOs)) ComplectTextBox.AppendText("Операционная система: " + selectedOs + Environment.NewLine);
         }
     }
 }

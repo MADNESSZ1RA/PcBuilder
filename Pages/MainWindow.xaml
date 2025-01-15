@@ -89,15 +89,15 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Content="Процессор" Style="{StaticResource ButtonStyle}" Grid.Column="0" Click="cpu_click"/>
-            <Button Content="Мат плата" Style="{StaticResource ButtonStyle}" Grid.Column="1" Click="motherboard_click"/>
-            <Button Content="Блок питания" Style="{StaticResource ButtonStyle}" Grid.Column="2" Click="power_supply_click"/>
-            <Button Content="Корпус" Style="{StaticResource ButtonStyle}" Grid.Column="3" Click="case_click"/>
-            <Button Content="Видеокарта" Style="{StaticResource ButtonStyle}" Grid.Column="4" Click="video_card_click"/>
-            <Button Content="Охлаждение" Style="{StaticResource ButtonStyle}" Grid.Column="5" Click="cpu_cooler_click"/>
-            <Button Content="Память" Style="{StaticResource ButtonStyle}" Grid.Column="6" Click="memory_click"/>
-            <Button Content="Накопители" Style="{StaticResource ButtonStyle}" Grid.Column="7" Click="internal_hard_drive_click"/>
-            <Button Content="ОС" Style="{StaticResource ButtonStyle}" Grid.Column="8" Click="os_click"/>
+            <Button Content="Процессор" Style="{StaticResource ButtonStyle}" Grid.Column="0" Click="cpu_click" x:Name="cpu_btn"/>
+            <Button Content="Мат плата" Style="{StaticResource ButtonStyle}" Grid.Column="1" Click="motherboard_click" x:Name="motherboard_btn"/>
+            <Button Content="Блок питания" Style="{StaticResource ButtonStyle}" Grid.Column="2" Click="power_supply_click" x:Name="power_supply_btn"/>
+            <Button Content="Корпус" Style="{StaticResource ButtonStyle}" Grid.Column="3" Click="case_click" x:Name="case_btn"/>
+            <Button Content="Видеокарта" Style="{StaticResource ButtonStyle}" Grid.Column="4" Click="video_card_click" x:Name="video_card_btn"/>
+            <Button Content="Охлаждение" Style="{StaticResource ButtonStyle}" Grid.Column="5" Click="cpu_cooler_click" x:Name="cpu_cooler_btn"/>
+            <Button Content="Память" Style="{StaticResource ButtonStyle}" Grid.Column="6" Click="memory_click" x:Name="memory_btn"/>
+            <Button Content="Накопители" Style="{StaticResource ButtonStyle}" Grid.Column="7" Click="internal_hard_drive_click" x:Name="internal_hard_drive_btn"/>
+            <Button Content="ОС" Style="{StaticResource ButtonStyle}" Grid.Column="8" Click="os_click" x:Name="os_btn"/>
         </Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -124,10 +124,27 @@
             <TextBox 
                 Grid.Row="1"
                 Grid.Column="1"
-                Margin="5,10,10,10"
+                Margin="5,10,0,400"
                 x:Name="DescriptionTextBox"
-                Style="{StaticResource TextBoxStyle}">
+                Style="{StaticResource TextBoxStyle}" Width="535">
             </TextBox>
+
+            <!-- Выбранные комплектующие -->
+            <TextBox 
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5,190,0,65"
+                x:Name="ComplectTextBox"
+                Style="{StaticResource TextBoxStyle}" Width="535"/>
+            
+            <Button 
+                Grid.Row="2"
+                Grid.Column="1" 
+                VerticalAlignment="Bottom"
+                Margin="5,0,5,5" 
+                Content="Добавить в комплект" 
+                Style="{StaticResource ButtonStyle}" 
+                Click="add_to_tomplect_click"/>
         </Grid>
     </Grid>
 </Window>
