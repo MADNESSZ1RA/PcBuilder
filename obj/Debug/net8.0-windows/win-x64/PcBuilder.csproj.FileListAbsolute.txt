@@ -488,3 +488,15 @@ C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64
 C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\SharpVectors.Rendering.Wpf.dll
 C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\SharpVectors.Runtime.Wpf.dll
 C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\win-x64\PcBuilder.sourcelink.json
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\win-x64\Pages\ParserWindow.g.cs
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\win-x64\Pages\ParserWindow.baml
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\HtmlAgilityPack.dll
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\win-x64\PcBuilder_Content.g.cs
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\runtimes\win-x64\native\WebView2Loader.dll
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\WebView2Loader.dll
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.Core.dll
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.WinForms.dll
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.Wpf.dll
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.Core.xml
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.WinForms.xml
+C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.Wpf.xml

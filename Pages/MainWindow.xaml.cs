@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using PcBuilder.Classes;
+using PcBuilder.Pages;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -144,6 +145,38 @@ namespace PcBuilder.Pages
             }
         }
 
+        public void search_click(object sender, EventArgs args)
+        {
+            var parserWindow = new ParserWindow();
+            try
+            {
+                if (ListTextBox.SelectedItem != null)
+                {
+                    string productName = ListTextBox.SelectedItem.ToString();
+                    string itemName = CreateUrl(productName);
+
+                    Uri url = new Uri(itemName);
+                    parserWindow.OpenPage(url);
+                    parserWindow.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Пожалуйста, выберите элемент из списка.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}");
+            }
+        }
+
+        public string CreateUrl(string productName)
+        {
+            string baseUrl = "https://www.dns-shop.ru/search/";
+            string searchUrl = $"{baseUrl}?q={Uri.EscapeDataString(productName.Trim())}";
+            return searchUrl;
+        }
+
         private (string[] names, string[] descriptions) GetTableData(string table)
         {
             List<string> names = new List<string>();
@@ -196,7 +229,17 @@ namespace PcBuilder.Pages
             if (ListTextBox.SelectedItem != null)
             {
                 int index = ListTextBox.SelectedIndex;
-                DescriptionTextBox.Text = GetTableData(current_page).descriptions[index];
+
+                var descriptions = GetTableData(current_page).descriptions;
+
+                if (index >= 0 && index < descriptions.Length)
+                {
+                    DescriptionTextBox.Text = descriptions[index];
+                }
+                else
+                {
+                    MessageBox.Show("Описание для выбранного элемента отсутствует.");
+                }
             }
         }
 
@@ -250,8 +293,8 @@ namespace PcBuilder.Pages
             if (!string.IsNullOrEmpty(selectedVideoCard)) ComplectTextBox.AppendText("Видеокарта: " + selectedVideoCard + Environment.NewLine);
             if (!string.IsNullOrEmpty(selectedCpuCooler)) ComplectTextBox.AppendText("Охлаждение: " + selectedCpuCooler + Environment.NewLine);
             if (!string.IsNullOrEmpty(selectedMemory)) ComplectTextBox.AppendText("Память: " + selectedMemory + Environment.NewLine);
-            if (!string.IsNullOrEmpty(selectedInternalHardDrive)) ComplectTextBox.AppendText("Накопитель: " + selectedInternalHardDrive + Environment.NewLine);
-            if (!string.IsNullOrEmpty(selectedOs)) ComplectTextBox.AppendText("Операционная система: " + selectedOs + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedInternalHardDrive)) ComplectTextBox.AppendText("Внутренний жесткий диск: " + selectedInternalHardDrive + Environment.NewLine);
+            if (!string.IsNullOrEmpty(selectedOs)) ComplectTextBox.AppendText("ОС: " + selectedOs + Environment.NewLine);
         }
     }
 }

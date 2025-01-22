@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Vkr91Pt+NJg=",
+  "dgSpecHash": "mzMSu7B9Qlc=",
   "success": true,
   "projectFilePath": "C:\\личное\\учеба 4 курс\\PcBuilder\\PcBuilder.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\apost\\.nuget\\packages\\htmlagilitypack\\1.11.72\\htmlagilitypack.1.11.72.nupkg.sha512",
     "C:\\Users\\apost\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\apost\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\apost\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.10\\microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
+    "C:\\Users\\apost\\.nuget\\packages\\microsoft.web.webview2\\1.0.2957.106\\microsoft.web.webview2.1.0.2957.106.nupkg.sha512",
     "C:\\Users\\apost\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
     "C:\\Users\\apost\\.nuget\\packages\\sharpvectors\\1.8.4.2\\sharpvectors.1.8.4.2.nupkg.sha512",
     "C:\\Users\\apost\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.10\\microsoft.netcore.app.crossgen2.win-x64.8.0.10.nupkg.sha512",

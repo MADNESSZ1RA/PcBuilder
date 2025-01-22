@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\src\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:src\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\pages\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\pages\\parserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\parserwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\pages\\parserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\parserwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\src\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:src\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|c:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\data\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:data\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +30,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\Program.cs",
+              "RelativeDocumentMoniker": "Src\\Program.cs",
+              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\Program.cs",
+              "RelativeToolTip": "Src\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T11:34:51.441Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,65 +57,46 @@
               "RelativeDocumentMoniker": "Pages\\MainWindow.xaml.cs",
               "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml.cs",
               "RelativeToolTip": "Pages\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAIwIQAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAkwCwBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T10:45:45.382Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Models.cs",
-              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Data\\Models.cs",
-              "RelativeDocumentMoniker": "Data\\Models.cs",
-              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Data\\Models.cs",
-              "RelativeToolTip": "Data\\Models.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:00:19.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Config.cs",
-              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\Config.cs",
-              "RelativeDocumentMoniker": "Src\\Config.cs",
-              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\Config.cs",
-              "RelativeToolTip": "Src\\Config.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T11:51:21.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\Program.cs",
-              "RelativeDocumentMoniker": "Src\\Program.cs",
-              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\Program.cs",
-              "RelativeToolTip": "Src\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T11:50:33.476Z",
+              "WhenOpened": "2025-01-16T05:50:05.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DbManager.cs",
-              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\DbManager.cs",
-              "RelativeDocumentMoniker": "Src\\DbManager.cs",
-              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Src\\DbManager.cs",
-              "RelativeToolTip": "Src\\DbManager.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAuwFQAAAARAAAAAAAAAA==",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Pages\\MainWindow.xaml",
+              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml",
+              "RelativeToolTip": "Pages\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-16T05:44:37.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParserWindow.xaml.cs",
+              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\ParserWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\ParserWindow.xaml.cs",
+              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\ParserWindow.xaml.cs",
+              "RelativeToolTip": "Pages\\ParserWindow.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T11:45:10.048Z",
+              "WhenOpened": "2025-01-16T05:47:05.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParserWindow.xaml",
+              "DocumentMoniker": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\ParserWindow.xaml",
+              "RelativeDocumentMoniker": "Pages\\ParserWindow.xaml",
+              "ToolTip": "C:\\\u043B\u0438\u0447\u043D\u043E\u0435\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\ParserWindow.xaml",
+              "RelativeToolTip": "Pages\\ParserWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-16T05:41:57.773Z",
               "EditorCaption": ""
             }
           ]
