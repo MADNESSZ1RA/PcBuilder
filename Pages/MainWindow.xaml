@@ -152,7 +152,14 @@
                 Margin="5,0,285,10" 
                 Content="Найти на маркете"
                 Style="{StaticResource ButtonStyle}" 
-                Click="search_click"/>
+                Click="open_search"/>
+            <Button
+                Grid.Row="1"
+                VerticalAlignment="Bottom"
+                Margin="10,0,30,10"
+                Content="Открыть комплект"
+                Style="{StaticResource ButtonStyle}"
+                Click="open_cart"/>
         </Grid>
     </Grid>
 </Window>

@@ -67,7 +67,7 @@ namespace PcBuilder.Pages
             DisplayTableData("cpu");
             current_page = "cpu";
             DescriptionTextBox.Text = "";
-            cpu_btn.Background = new SolidColorBrush(Colors.Green);
+            //cpu_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void motherboard_click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace PcBuilder.Pages
             DisplayTableData("motherboard");
             current_page = "motherboard";
             DescriptionTextBox.Text = "";
-            motherboard_btn.Background = new SolidColorBrush(Colors.Green);
+            //motherboard_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void power_supply_click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace PcBuilder.Pages
             DisplayTableData("power_supply");
             current_page = "power_supply";
             DescriptionTextBox.Text = "";
-            power_supply_btn.Background = new SolidColorBrush(Colors.Green);
+            //power_supply_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void case_click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace PcBuilder.Pages
             DisplayTableData("case");
             current_page = "case";
             DescriptionTextBox.Text = "";
-            case_btn.Background = new SolidColorBrush(Colors.Green);
+            //case_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void video_card_click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace PcBuilder.Pages
             DisplayTableData("video_card");
             current_page = "video_card";
             DescriptionTextBox.Text = "";
-            video_card_btn.Background = new SolidColorBrush(Colors.Green);
+            //video_card_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void cpu_cooler_click(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace PcBuilder.Pages
             DisplayTableData("cpu_cooler");
             current_page = "cpu_cooler";
             DescriptionTextBox.Text = "";
-            cpu_cooler_btn.Background = new SolidColorBrush(Colors.Green);
+            //cpu_cooler_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void memory_click(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace PcBuilder.Pages
             DisplayTableData("memory");
             current_page = "memory";
             DescriptionTextBox.Text = "";
-            memory_btn.Background = new SolidColorBrush(Colors.Green);
+            //memory_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void internal_hard_drive_click(object sender, EventArgs e)
@@ -123,7 +123,7 @@ namespace PcBuilder.Pages
             DisplayTableData("internal_hard_drive");
             current_page = "internal_hard_drive";
             DescriptionTextBox.Text = "";
-            internal_hard_drive_btn.Background = new SolidColorBrush(Colors.Green);
+            //internal_hard_drive_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         public void os_click(object sender, EventArgs e)
@@ -131,7 +131,7 @@ namespace PcBuilder.Pages
             DisplayTableData("os");
             current_page = "os";
             DescriptionTextBox.Text = "";
-            os_btn.Background = new SolidColorBrush(Colors.Green);
+            //os_btn.Background = new SolidColorBrush(Colors.Green);
         }
 
         private void DisplayTableData(string table)
@@ -144,8 +144,21 @@ namespace PcBuilder.Pages
                 ListTextBox.Items.Add(name);
             }
         }
-
-        public void search_click(object sender, EventArgs args)
+        public void open_cart(object sender, EventArgs e)
+        {
+            var Text = ComplectTextBox.Text;
+            var CartWindow = new CartWindow();
+            try
+            {
+                CartWindow.ShowCart(Text);
+                CartWindow.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}");
+            }
+        }
+        public void open_search(object sender, EventArgs args)
         {
             var parserWindow = new ParserWindow();
             try
@@ -242,9 +255,14 @@ namespace PcBuilder.Pages
                 }
             }
         }
-
         private void add_to_tomplect_click(object sender, RoutedEventArgs e)
         {
+            if (ListTextBox.SelectedItem == null)
+            {
+                MessageBox.Show("Пожалуйста, выберите товар из списка.");
+                return;
+            }
+
             string itemName = ListTextBox.SelectedItem.ToString();
             if (!string.IsNullOrEmpty(itemName))
             {
@@ -252,37 +270,47 @@ namespace PcBuilder.Pages
                 {
                     case "cpu":
                         selectedCpu = itemName;
+                        cpu_btn.Background = new SolidColorBrush(Colors.Green); // Изменение цвета кнопки
                         break;
                     case "motherboard":
                         selectedMotherboard = itemName;
+                        motherboard_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "power_supply":
                         selectedPowerSupply = itemName;
+                        power_supply_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "case":
                         selectedCase = itemName;
+                        case_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "video_card":
                         selectedVideoCard = itemName;
+                        video_card_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "cpu_cooler":
                         selectedCpuCooler = itemName;
+                        cpu_cooler_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "memory":
                         selectedMemory = itemName;
+                        memory_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "internal_hard_drive":
                         selectedInternalHardDrive = itemName;
+                        internal_hard_drive_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "os":
                         selectedOs = itemName;
+                        os_btn.Background = new SolidColorBrush(Colors.Green);
                         break;
+                    default:
+                        MessageBox.Show("Неизвестная категория.");
+                        return;
                 }
-
                 UpdateComplectTextBox();
             }
         }
-
         private void UpdateComplectTextBox()
         {
             ComplectTextBox.Clear();

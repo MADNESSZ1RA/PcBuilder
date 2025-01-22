@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 
-2132964904
+3-1501117880
 1-693099233
-1092218951
+11-1343475388
 213-185203585
-Pages\MainWindow.xaml;Pages\ParserWindow.xaml;
+Pages\CartWindow.xaml;Pages\MainWindow.xaml;Pages\ParserWindow.xaml;
 
-False
+True
 

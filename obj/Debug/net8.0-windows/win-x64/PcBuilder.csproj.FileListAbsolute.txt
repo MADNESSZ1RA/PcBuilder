@@ -500,3 +500,5 @@ C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64
 C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.Core.xml
 C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.WinForms.xml
 C:\личное\учеба 4 курс\PcBuilder\bin\Debug\net8.0-windows\win-x64\Microsoft.Web.WebView2.Wpf.xml
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\win-x64\Pages\CartWindow.g.cs
+C:\личное\учеба 4 курс\PcBuilder\obj\Debug\net8.0-windows\win-x64\Pages\CartWindow.baml
