@@ -1,0 +1,63 @@
+id;name;price;mode;max_memory
+1;Microsoft Windows 11 Home (64-bit);109.99;64;128
+2;Microsoft Windows 11 Pro (64-bit);159.99;64;2048
+3;Microsoft Windows 10 Home (64-bit);;64;128
+4;Microsoft Windows 10 Pro (64-bit);;64;2048
+5;Microsoft Windows 11 Home (64-bit);138.99;64;128
+6;Microsoft Windows 11 Pro (64-bit);199;64;2048
+7;Microsoft Windows 11 Home (64-bit);138.99;64;128
+8;Microsoft Windows 11 Pro (64-bit);198.99;64;2048
+9;Microsoft Windows 10 Pro (32/64-bit);199.99;32,64;2048
+10;Microsoft Windows 10 Pro (64-bit);;64;2048
+11;Microsoft Windows 10 Home (64-bit);;64;128
+12;Microsoft Windows 10 Pro (32/64-bit);;32,64;2048
+13;Microsoft Windows 8.1 (32/64-bit);;32,64;128
+14;Microsoft Windows 10 Home (64-bit);;64;128
+15;Microsoft Windows 7 Home Premium (32/64-bit);253.15;32,64;16
+16;Microsoft Windows 10 Pro (32/64-bit);;32,64;2048
+17;Microsoft Windows 10 Home (32/64-bit);;32,64;128
+18;Microsoft Windows 7 Professional (32/64-bit);254.16;32,64;192
+19;Microsoft Windows 10 Pro (32/64-bit);;32,64;2048
+20;Microsoft Windows 10 Home (32/64-bit);;32,64;128
+21;Microsoft Windows 10 Home (32/64-bit);;32,64;128
+22;Microsoft Windows 10 Home (32/64-bit);;32,64;128
+23;Microsoft Windows 10 Home (32-bit);;32;4
+24;Microsoft Windows 10 Pro (32-bit);;32;4
+25;Microsoft Windows 7 Ultimate SP1 (64-bit);;64;192
+26;Microsoft Windows 7 Home Premium SP1 (32-bit);;32;4
+27;Microsoft Windows 8 (32-bit);;32;4
+28;Microsoft Windows 7 Ultimate (32/64-bit);;32,64;192
+29;Microsoft Windows 8 Pro (32-bit);;32;4
+30;Microsoft Windows 8.1 Pro (64-bit);183.01;64;512
+31;Microsoft Windows 7 Professional SP1 (64-bit);;64;192
+32;Microsoft Windows 7 Home Premium SP1 (32-bit);;32;4
+33;Microsoft Windows 8.1 Pro DE (64-bit);188.07;64;512
+34;Microsoft Windows 7 Pro SP1 DE (64-bit);;64;192
+35;Microsoft Windows 7 Professional SP1 (32-bit);;32;4
+36;Microsoft Windows 8.1 (64-bit);;64;128
+37;Microsoft Windows 7 Ultimate SP1 (32-bit);;32;4
+38;Microsoft Windows 7 Ultimate SP1 (32-bit);;32;4
+39;Microsoft Windows 7 Home Premium SP1 (64-bit);;64;16
+40;Microsoft Windows 7 Ultimate SP1 (64-bit);;64;192
+41;Microsoft Windows 7 Home Premium SP1 (64-bit);;64;16
+42;Microsoft Windows 8 Pro (64-bit);;64;512
+43;Microsoft Windows 7 Ultimate (64-bit);;64;192
+44;Microsoft Windows 7 Professional SP1 (32-bit);;32;4
+45;Microsoft Windows 7 Professional SP1 (64-bit);;64;192
+46;Microsoft Windows 7 Home Premium SP1 (64-bit);;64;16
+47;Microsoft Windows 7 Professional SP1 (32-bit);;32;4
+48;Microsoft Windows 7 Pro SP1 DE (64-bit);;64;192
+49;Microsoft Windows 8 (32-bit);;32;4
+50;Microsoft Windows 8 (64-bit);;64;128
+51;Microsoft Windows 8.1 (64-bit);;64;128
+52;Microsoft Windows 8 (64-bit);;64;128
+53;Microsoft Windows 8.1 Pro (64-bit);;64;512
+54;Microsoft Windows 8 Pro (64-bit);;64;512
+55;Microsoft Windows 8 Pro (32-bit);;32;4
+56;Microsoft Windows 8.1 Pro (32-bit);;32;4
+57;Microsoft Windows 8.1 Pro (32-bit);;32;4
+58;Microsoft Windows 8.1 (32-bit);;32;4
+59;Microsoft Windows 8 Pro DE (64-bit);;64;512
+60;Microsoft Windows 8.1 (32-bit);;32;4
+61;Microsoft Windows 8.1 DE (64-bit);;64;128
+62;Microsoft Windows 8.1 Pro (32/64-bit);;32,64;512

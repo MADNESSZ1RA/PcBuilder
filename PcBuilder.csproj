@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+
+
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+		<DebugType>embedded</DebugType>
+		<PublishReadyToRun>true</PublishReadyToRun>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Pages\cpu.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.72" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2957.106" />
+		<PackageReference Include="Npgsql" Version="9.0.2" />
+		<PackageReference Include="SharpVectors" Version="1.8.4.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Data/cpu.csv" />
+		<None Include="Data/motherboard.csv" />
+		<None Include="Data/memory.csv" />
+		<None Include="Data/power_supply.csv" />
+		<None Include="Data/video_card.csv" />
+		<None Include="Data/case.csv" />
+		<None Include="Data/internal_hard_drive.csv" />
+		<None Include="Data/cpu_cooler.csv" />
+		<None Include="Data/case_fan.csv" />
+		<None Include="Data/os.csv" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Pages\cpu.svg" />
+	</ItemGroup>
+</Project>

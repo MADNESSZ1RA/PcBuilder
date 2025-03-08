@@ -1,0 +1,165 @@
+﻿<Window x:Class="PcBuilder.Pages.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PcBuilder.Pages"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1100">
+
+    <Window.Resources>
+        <!-- Стиль для кнопок -->
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF110D61" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="1"
+                                CornerRadius="15">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="Gray" Offset="0"/>
+                                <GradientStop Color="#FF1E0A88" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Стиль для ListBox -->
+        <Style x:Key="ListBoxStyle" TargetType="ListBox">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+
+        <!-- Стиль для текстовых полей -->
+        <Style x:Key="TextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="Black">
+        <!-- Сетка для кнопок -->
+        <Grid VerticalAlignment="Top" Height="50" HorizontalAlignment="Stretch" Margin="10,10,10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Процессор" Style="{StaticResource ButtonStyle}" Grid.Column="0" Click="cpu_click" x:Name="cpu_btn"/>
+            <Button Content="Мат плата" Style="{StaticResource ButtonStyle}" Grid.Column="1" Click="motherboard_click" x:Name="motherboard_btn"/>
+            <Button Content="Блок питания" Style="{StaticResource ButtonStyle}" Grid.Column="2" Click="power_supply_click" x:Name="power_supply_btn"/>
+            <Button Content="Корпус" Style="{StaticResource ButtonStyle}" Grid.Column="3" Click="case_click" x:Name="case_btn"/>
+            <Button Content="Видеокарта" Style="{StaticResource ButtonStyle}" Grid.Column="4" Click="video_card_click" x:Name="video_card_btn"/>
+            <Button Content="Охлаждение" Style="{StaticResource ButtonStyle}" Grid.Column="5" Click="cpu_cooler_click" x:Name="cpu_cooler_btn"/>
+            <Button Content="Память" Style="{StaticResource ButtonStyle}" Grid.Column="6" Click="memory_click" x:Name="memory_btn"/>
+            <Button Content="Накопители" Style="{StaticResource ButtonStyle}" Grid.Column="7" Click="internal_hard_drive_click" x:Name="internal_hard_drive_btn"/>
+            <Button Content="ОС" Style="{StaticResource ButtonStyle}" Grid.Column="8" Click="os_click" x:Name="os_btn"/>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Список -->
+            <ListBox 
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="10,10,5,10"
+                x:Name="ListTextBox"
+                Style="{StaticResource ListBoxStyle}"
+                SelectionChanged="ListTextBox_SelectionChanged">
+            </ListBox>
+
+
+            <!-- Описание -->
+            <TextBox 
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5,10,0,400"
+                x:Name="DescriptionTextBox"
+                Style="{StaticResource TextBoxStyle}" Width="535">
+            </TextBox>
+
+            <!-- Выбранные комплектующие -->
+            <TextBox 
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5,190,0,65"
+                x:Name="ComplectTextBox"
+                Style="{StaticResource TextBoxStyle}" Width="535"/>
+
+            <Button 
+                Grid.Row="1"
+                Grid.Column="1" 
+                VerticalAlignment="Bottom"
+                Margin="285,0,5,10" 
+                Content="Добавить в комплект" 
+                Style="{StaticResource ButtonStyle}" 
+                Click="add_to_tomplect_click"/>
+            <Button 
+                Grid.Row="1"
+                Grid.Column="1" 
+                VerticalAlignment="Bottom"
+                Margin="5,0,285,10" 
+                Content="Найти на маркете"
+                Style="{StaticResource ButtonStyle}" 
+                Click="open_search"/>
+            <Button
+                Grid.Row="1"
+                VerticalAlignment="Bottom"
+                Margin="10,0,30,10"
+                Content="Открыть комплект"
+                Style="{StaticResource ButtonStyle}"
+                Click="open_cart"/>
+        </Grid>
+    </Grid>
+</Window>
