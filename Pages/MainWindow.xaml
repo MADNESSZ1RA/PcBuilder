@@ -124,7 +124,7 @@
             <TextBox 
                 Grid.Row="1"
                 Grid.Column="1"
-                Margin="5,10,0,400"
+                Margin="5,10,0,317"
                 x:Name="DescriptionTextBox"
                 Style="{StaticResource TextBoxStyle}" Width="535">
             </TextBox>
@@ -133,7 +133,7 @@
             <TextBox 
                 Grid.Row="1"
                 Grid.Column="1"
-                Margin="5,190,0,65"
+                Margin="5,267,0,65"
                 x:Name="ComplectTextBox"
                 Style="{StaticResource TextBoxStyle}" Width="535"/>
 

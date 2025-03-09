@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|f:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\pages\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|f:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\pages\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|f:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\pcbuilder\\pages\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{946EB6B9-DA7A-4CAE-8706-5368E6B5660A}|PcBuilder.csproj|solutionrelative:pages\\registration.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,26 +51,48 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Auth.xaml",
-              "DocumentMoniker": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\Auth.xaml",
-              "RelativeDocumentMoniker": "Pages\\Auth.xaml",
-              "ToolTip": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\Auth.xaml",
-              "RelativeToolTip": "Pages\\Auth.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-08T19:49:16.443Z",
-              "EditorCaption": ""
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MainWindow.xaml.cs",
+              "ToolTip": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Pages\\MainWindow.xaml.cs",
+              "ViewState": "AgIAANkCAAAAAAAAAAAQwB8DAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T14:21:39.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Registration.xaml",
               "DocumentMoniker": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\Registration.xaml",
               "RelativeDocumentMoniker": "Pages\\Registration.xaml",
               "ToolTip": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\Registration.xaml",
               "RelativeToolTip": "Pages\\Registration.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-08T19:49:15.443Z",
+              "WhenOpened": "2025-03-09T14:10:55.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Pages\\MainWindow.xaml",
+              "ToolTip": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\MainWindow.xaml",
+              "RelativeToolTip": "Pages\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-09T14:08:53.888Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.xaml",
+              "DocumentMoniker": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\Auth.xaml",
+              "RelativeDocumentMoniker": "Pages\\Auth.xaml",
+              "ToolTip": "F:\\\u0443\u0447\u0435\u0431\u0430 4 \u043A\u0443\u0440\u0441\\PcBuilder\\Pages\\Auth.xaml",
+              "RelativeToolTip": "Pages\\Auth.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-08T19:49:16.443Z"
             }
           ]
         }
